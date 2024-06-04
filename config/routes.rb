@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   # dice/5/4 route
   get("/dice/5/4", {:controller => "dice", :action => "five_four_sided"})
 
+  #random dice
+  get("/dice/:number_of_dice/:how_many_sides",{:controller => "dice", :action => "random"})
+
 end
